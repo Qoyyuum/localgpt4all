@@ -6,7 +6,6 @@ app = Flask(__name__)
 cors = CORS(app, resources={r"/v1/*": {"origins": "*"}})
 
 openai.api_base = "http://localhost:4891/v1"
-#openai.api_base = "https://api.openai.com/v1"
 openai.api_key = "not needed for a local LLM"
 model = "gg-model-gpt4all-falcon-q4_0"
 
